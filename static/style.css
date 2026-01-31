@@ -1,0 +1,200 @@
+body
+{
+    background-color: rgb(235, 253, 253);
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#qr-title
+{
+margin-bottom: 50px;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#company-name
+{
+    margin-bottom: 0%;
+}
+
+#title
+{
+    margin-top: -9px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+
+
+#container
+{
+  display: flex;
+ justify-content: center;
+
+
+    gap: 10px;
+}
+
+#tutorial-container {
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    width: 842px;
+    height: 550px;
+    margin: 30px auto;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     text-align: center;
+    margin-top: 30px;
+}
+
+
+#submitBtn
+{
+ border: 2px solid rgba(158, 194, 176);
+ border-radius: 15px;
+ padding: 10px;
+ width: 100px;
+ font-size: 13px;
+ font-weight: 600;
+}
+
+.download-btn {
+ display: inline-flex;
+ align-items: center;
+ text-align: center;
+ gap: 8px;
+ color: #000000;
+ border: 2px solid rgba(158, 194, 176);
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 13px;
+ border: 2px solid rgba(158, 194, 176);
+ border-radius: 15px;
+ padding: 10px;
+ margin-left: 20px;
+ width: 65px;
+
+}
+
+
+
+.boxes-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+#enterdeatils-container,
+#button-container {
+    background-color: aliceblue;
+    width: 350px;
+    height: 300px;
+}
+
+#bubbles
+{
+    display: inline-flex;
+    gap: 30px;
+
+}
+
+.bubbles
+{
+    background-color: rgb(211, 252, 238);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.card {
+background-color: #d9f7eb;
+border-radius: 20px;
+padding: 30px;
+}
+.input-card {
+width: 420px;
+height: 300px;
+text-align: left;
+}
+.input-card h2 {
+font-size: 18px;
+margin-bottom: 8px;
+}
+.input-card p {
+font-size: 13px;
+color: #555;
+margin-bottom: 20px;
+}
+.input-card input {
+width: 100%;
+padding: 12px;
+border-radius: 12px;
+border: 1px solid #999;
+margin-bottom: 25px;
+}
+.btn-group {
+display: flex;
+gap: 20px;
+}
+.btn {
+padding: 10px 25px;
+border-radius: 25px;
+font-size: 14px;
+cursor: pointer;
+}
+.primary {
+background-color: #000;
+color: #fff;
+border: none;
+}
+.outline {
+background-color: transparent;
+border: 1.5px solid #000;
+}
+
+.qr-card {
+width: 300px;
+height: 300px;
+background-color: #fff;
+border-radius: 20px;
+}
+
+.steps {
+display: flex;
+justify-content: center;
+gap: 40px;
+margin-top: 30px;
+flex-wrap: wrap;
+}
+.step-card {
+background-color: #d9f7eb;
+width: 260px;
+height: 220px;
+border-radius: 20px;
+padding: 20px;
+text-align: left;
+}
+.step-number {
+font-size: 22px;
+font-weight: bold;
+}
+
+.steps-img
+{
+    width: 250px;
+    height: 150px;
+}
+.btn.outline {
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    border: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="static/style.css">
+      </head>
+      <body>
+
+     <h1 id="company-name">VYOMA 1.0</h1>
+          <p id="title">Sodtware Solutions</p>
+
+          <h1 id="qr-title">QR Code Generator Online</h1>
+
+          <div id="container">
+
+              <form method="POST" action="/show">
+
+                  <div class="card input-card">
+                      <h2>Transform any text into a QR Code</h2>
+                      <p>Enter your website link, email, phone number or sentence</p>
+
+                      <input
+                          type="text"
+                          placeholder="Enter text here"
+                          name="linkStr"
+                          required
+                      >
+
+                      <div class="btn-group">
+                          <button type="submit" class="btn primary">
+                              Generate
+                          </button>
+
+                          <button type="button" class="btn outline">
+
+                              <a
+                                    href="data:image/png;base64,{{ qr_data }}"
+                                    download="QR_Code_made_by_Vyoma.png"
+                                    class="btn outline"
+                                >
+    Download
+</a>
+                          </button>
+                      </div>
+                  </div>
+
+              </form>
+
+              <div class="card qr-card" id="img-container">
+                  {% if qr_data %}
+                      <img
+                          src="data:image/png;base64,{{ qr_data }}"
+                          alt="Generated QR Code"
+                          width="300"
+                          height="300"
+                          id="QRimg"
+                      >
+                  {% endif %}
+              </div>
+
+          </div>
+
+          <div id="tutorial-container">
+              <h2>How to generate a QR Code</h2>
+
+              <div class="steps">
+                  <div class="step-card">
+                      <span class="step-number">1</span>
+                      <p>Enter the details</p>
+                      <img src="static/img/Screenshot 2026-01-31 143425.png" alt="" id="step-1" class="steps-img">
+                  </div>
+
+                  <div class="step-card">
+                      <span class="step-number">2</span>
+                      <p>Press the button</p>
+                      <img src="static/img/IMG_9060.png" alt="" id="step-2" class="steps-img">
+                  </div>
+              </div>
+
+              <div id="icons">
+                  <h2>Create QR Code from</h2>
+                  <div id="bubbles">
+                      <div class="bubbles">Email</div>
+                      <div class="bubbles">Website</div>
+                      <div class="bubbles">Phone Number</div>
+                      <div class="bubbles">Any words</div>
+                  </div>
+              </div>
+          </div>
+
+      </body>
+      </html>
